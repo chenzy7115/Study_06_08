@@ -15,8 +15,6 @@ int main()
 	printf("显示变量a的值：%d\n", a);
 	printf("显示变量b的值：%d\n", b);
 
-
-
 }
 
 //void test()
