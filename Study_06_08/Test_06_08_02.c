@@ -12,14 +12,12 @@ int main()
 	int a = 10;
 	int b = a++;
 	printf("演示a++");
-	printf("显示变量a的值：%d\n",a);
-	printf("显示变量b的值：%d\n",b);
-
-	a = 10;
-	b = ++a;
-	printf("演示++a");
 	printf("显示变量a的值：%d\n", a);
 	printf("显示变量b的值：%d\n", b);
+
+
+
+}
 
 //void test()
 //{
