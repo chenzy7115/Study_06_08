@@ -5,10 +5,10 @@
 
 int main()
 {
-	unsigned int a = 1000;
-	unsigned int b = ~a;
-	printf("%d\n", a);
-	printf("%d\n", b);
+	int a = 1;
+	int b = ~a;
+	printf("显示变量a的值：%d\n",a);
+	printf("显示变量b的值：%d\n",b);
 
 	return 0;
 }
