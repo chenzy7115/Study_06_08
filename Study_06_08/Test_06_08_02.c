@@ -2,10 +2,6 @@
 
 #include <stdio.h>
 #include <string.h>
-//extern int Add();
-
-//使用define 来定义宏
-//#define MAX(x,y)(x>y?x:y)
 
 int main()
 {
