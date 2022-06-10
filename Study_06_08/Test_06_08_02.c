@@ -26,7 +26,6 @@ int main()
 
 	printf("修改后的价格：%d\n", pb->price);
 
-	
-	return 0;
+		return 0;
 }
 
