@@ -7,10 +7,10 @@
 int main()
 {
 	int arr[] = { 1,2,3,4,5,6,7,9,10 };
-	int sz = sizeof(arr) / sizeof(arr[0]);
-	int left = 0;
-	int right = sz;
-	int mid = 0;
+	int sz = sizeof(arr) / sizeof(arr[0]);//计算数组下标数
+	int left = 0;//左下标值
+	int right = sz;//右下标值
+	int mid = 0;//左右下标平均值
 	int k = 10;//需要查找的值
 
 	while (left <= right)
