@@ -3,29 +3,37 @@
 #include <stdio.h>
 #include <string.h>
 
-struct Book
-{
-	char name[20];
-	short price;
-};
 
 int main()
 {
-	struct Book b1 = { "C语言程序设计",55 };
-	struct Book* pb = &b1;
+	int arr[] = { 1,2,3,4,5,6,7,9,10 };
+	int sz = sizeof(arr) / sizeof(arr[0]);
+	int left = 0;
+	int right = sz;
+	int mid = 0;
+	int k = 10;//需要查找的值
 
-	printf("书名：%s\n",(*pb).name);
-	printf("价格：%d\n",(*pb).price);
-
-	printf("书名：%s\n", pb->name);
-	printf("价格：%d\n", pb->price);
-
-	pb->price = 15;
-	strcpy(b1.name, "C++程序设计"); //strcpy是string copy的意思
-	printf("修改过的书名：%s\n", pb->name);
-
-	printf("修改后的价格：%d\n", pb->price);
-
-		return 0;
+	while (left <= right)
+	{
+		mid = (left + right) / 2;
+		if (arr[mid] > k)
+		{
+			right = mid - 1;
+		}
+		else if (arr[mid] < k)
+		{
+			left = mid + 1;
+		}
+		else
+		{
+			printf("查找的值%d,在数组arr[%d]", k, mid);
+			break;
+		}
+	}
+	if (left > right)
+	{
+		printf("查找的值%d不在数组arr[]中", k);
+	}
+	return 0;
 }
 
